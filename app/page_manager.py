@@ -21,7 +21,7 @@ class PageManager(QWidget):
         self.__pages[page.get_name()] = new_page
         self.__page_layout.addWidget(new_page)
         
-    def get_page(self, name: str) -> QLayout:
+    def get_page(self) -> QLayout:
         return self.__current_page
     
     def open_page(self, name: str):

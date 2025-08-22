@@ -4,7 +4,7 @@ from app.interfaces.IPage import IPage
 from app.page_manager import PageManager
 
 class BasePage(IPage):
-    def __init__(self, name, *args, **kwargs):
+    def __init__(self, name):
         
         self.__manager: PageManager = None
         self.__name: str = name
